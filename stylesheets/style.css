@@ -4123,11 +4123,14 @@ html, .b-body {
   font-weight: bold;
 }
 
-.b-nav {
-  float: right;
-}
 .b-nav__ulist {
-  margin: 0;
+  float: right;
+  margin: 0 5px 0 0;
+}
+.b-nav__ulist-menu-list {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
 }
 .b-nav__ulist-adaptive-menu {
   display: none;
@@ -4141,24 +4144,30 @@ html, .b-body {
   cursor: pointer;
   float: right;
 }
-.b-nav__ulist-menu-list {
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  margin-left: 10px;
+.b-nav__persona {
+  float: right;
+  cursor: pointer;
+  position: relative;
+}
+.b-nav__persona__image {
+  border-radius: 50%;
+}
+.b-nav__persona__button {
+  content: "";
+  position: absolute;
+  top: 17px;
+  color: #ffffff;
+  right: -15px;
 }
 .b-nav__link {
   text-decoration: none;
   display: inline-block;
   color: #ffffff;
-  height: 50px;
-  padding: 0 10px;
+  padding: 15px 10px;
   box-sizing: padding-box;
-  line-height: 50px;
 }
 .b-nav__link:hover {
-  padding: 0 5px;
-  height: 40px;
-  line-height: 40px;
+  padding: 10px 5px;
   border: 5px solid #ffffff;
   border-radius: 25px;
 }
@@ -4182,6 +4191,9 @@ html, .b-body {
 }
 .b-footer-container-row__top {
   padding-top: 25px;
+}
+.b-footer-container-row__top-menu {
+  text-align: left;
 }
 .b-footer-container-row__top-social {
   text-align: right;
@@ -4285,29 +4297,38 @@ html, .b-body {
     margin-top: 25px;
   }
 
-  .b-nav {
+  .b-nav__ulist {
+    padding: 0;
     float: none;
     background: #77A0A0;
   }
-  .b-nav__ulist {
-    padding: 0;
-  }
   .b-nav__ulist-adaptive-menu {
     display: block;
+    margin-top: 10px;
   }
-  .b-nav__ulist-menu {
+  .b-nav__ulist {
     display: none;
+  }
+  .b-nav__persona {
+    display: none;
+    float: left;
+    margin: 5px 0 0 10px;
   }
   .b-nav__ulist-menu-list {
     display: block;
     margin: 0;
   }
   .b-nav__link {
-    width: auto;
+    width: 100%;
     text-align: center;
   }
   .b-nav__link:hover {
     border: 0 none;
+    border-radius: 0;
+    padding: 15px 10px;
+  }
+  .b-nav__link:active {
+    background: #5b8479;
   }
 }
 @media only screen and (max-width: 1024px) {
