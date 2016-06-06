@@ -5,7 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -4068,8 +4069,17 @@ th {
   clip: auto;
 }
 
+@font-face {
+  font-family: "Chunkfive";
+  src: url("../fonts/Chunkfive.otf");
+}
 * {
   box-sizing: padding-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 html, .b-body {
@@ -4112,7 +4122,6 @@ html, .b-body {
 .b-logo__link {
   text-decoration: none;
   display: inline-block;
-  padding: 15px 0;
   font-family: "Montserrat", sans-serif;
 }
 .b-logo-name, .b-logo-name__span {
@@ -4174,6 +4183,95 @@ html, .b-body {
 
 .showitems {
   display: block !important;
+}
+
+.b-header-info {
+  margin-top: 110px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+.b-header-info__text-one {
+  text-transform: uppercase;
+  font-size: 5em;
+  margin: 0;
+  font-family: "Chunkfive", sans-serif;
+  font-weight: 400;
+}
+.b-header-info__text-one-span {
+  color: #01A2A6;
+}
+.b-header-info__link {
+  color: #10273D;
+  text-decoration: none;
+  padding: 30px 37px;
+  background: #FFFFA6;
+  text-transform: uppercase;
+  border-radius: 60px;
+  margin-top: 40px;
+  display: inline-block;
+  font-weight: bold;
+}
+.b-header-info__link:hover {
+  color: #ffffff;
+  background: #01A2A6;
+}
+
+.b-city-section {
+  background: rgba(255, 255, 255, 0.5);
+  padding-top: 115px;
+  padding-bottom: 115px;
+  margin-top: -40px;
+}
+.b-city-section-two-one {
+  font-size: 3em;
+  font-weight: 400;
+  font-family: "Chunkfive", sans-serif;
+  color: #29D9C2;
+}
+.b-city-section-two-one-span {
+  color: #01A2A6;
+}
+.b-city-section-two-two {
+  font-family: "Lato", sans-serif;
+  color: #777777;
+  line-height: 35px;
+}
+
+.b-content {
+  background: #F2FEFE;
+}
+.b-content-one {
+  margin-top: 70px;
+}
+.b-content-one-one {
+  color: #29D9C2;
+  font-size: 3em;
+  font-weight: 400;
+  font-family: "Chunkfive", sans-serif;
+  margin: 0;
+}
+.b-content-one-span {
+  color: #01A2A6;
+}
+.b-content-one-three {
+  font-family: "Lato", sans-serif;
+  color: #777777;
+  line-height: 35px;
+}
+.b-content-three-one {
+  position: relative;
+}
+.b-content-three-one-input {
+  border: 1px solid #E9EBEB;
+  padding: 10px 10px 10px 40px;
+  border-radius: 25px;
+  width: 100%;
+}
+.b-content-three-one-icon {
+  position: absolute;
+  left: 30px;
+  top: 12px;
 }
 
 .b-footer {
@@ -4238,6 +4336,11 @@ html, .b-body {
 }
 
 @media only screen and (max-width: 320px) {
+  .b-header-info__text-one {
+    background: rgba(119, 140, 142, 0.5);
+    font-size: 4em;
+  }
+
   .b-footer-container-row__top-menu {
     float: none;
     text-align: center;
@@ -4257,6 +4360,14 @@ html, .b-body {
   }
 }
 @media only screen and (max-width: 480px) {
+  .b-header-info {
+    margin-top: 50px;
+  }
+  .b-header-info__text-one {
+    background: rgba(119, 140, 142, 0.5);
+    font-size: 4em;
+  }
+
   .b-footer-container-row__top-menu {
     float: none;
     text-align: center;
